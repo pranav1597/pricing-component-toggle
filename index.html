@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | pricing component with toggle button</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <div class="heading">Our Pricing</div>
+
+    <div class="toggle-flex">
+
+      <div class="annual">Annually</div>
+
+      <div class="toggle-btn">
+
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <div class="ball"></div>
+        </label>
+
+      </div>
+
+      <div class="month">Monthly</div>
+
+    </div> <!-- end of toggle-flex class div -->
+
+    <div class="price-section">
+
+      <div class="price-card card-one"> 
+
+        <div class="scheme-section">
+          <div class="scheme">Basic</div>
+          <div data-price class="scheme-price">&dollar; 19.99</div>
+          <hr>
+          <div class="storage">500 GB Storage</div>
+          <hr>
+          <div class="allowed-users">2 Users Allowed</div>
+          <hr>
+          <div class="upload-size">Send up to 3 GB</div>
+          <hr>
+          <div class="learn-more">Learn More</div>
+        </div>
+
+      </div>
+
+      <div class="price-card card-two"> 
+
+        <div class="scheme-section">
+          <div class="scheme">Professional</div>
+          <div data-price class="scheme-price p-white">&dollar; 24.99</div>
+          <hr>
+          <div class="storage">1 TB Storage</div>
+          <hr>
+          <div class="allowed-users">5 Users Allowed</div>
+          <hr>
+          <div class="upload-size">Send up to 10 GB</div>
+          <hr>
+          <div class="learn-more btn-two">Learn More</div>
+        </div>
+
+      </div>
+
+      <div class="price-card card-three"> 
+
+        <div class="scheme-section">
+          <div class="scheme">Master</div>
+          <div data-price class="scheme-price">&dollar; 39.99</div>
+          <hr>
+          <div class="storage">2 TB Storage</div>
+          <hr>
+          <div class="allowed-users">10 Users Allowed</div>
+          <hr>
+          <div class="upload-size">Send up to 20 GB</div>
+          <hr>
+          <div class="learn-more">Learn More</div>
+        </div>
+
+      </div>
+
+
+    </div> <!-- end of price-section class div-->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/pranav1597/pricing-component-toggle" target="_blank">Pranav</a>.
+    </div>
+
+  </div> <!-- end of container class div -->
+
+  
+
+  
+ 
+</body>
+</html>

@@ -1,0 +1,199 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: 223% -3%;
+    background-size: 250px;
+}
+
+.container{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.heading{
+    margin-top: 2em;
+    font-size: 20px;
+    color:  hsl(233, 13%, 49%);
+}
+
+.toggle-flex{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    color: hsl(234, 14%, 74%);
+}
+
+.toggle-btn{
+    /* border: 2px solid red; */
+    width: 45px;
+    height: 25px;
+    display: flex;
+    position: relative;
+    margin: 0 15px;
+}
+
+.checkbox{
+    /* border: 2px solid blue; */
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.label{
+   width: 45px;
+   /* border: 2px solid black; */
+   position: relative;
+   border-radius: 20px;
+   background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 22px;
+    position: absolute;
+    transition: transform 0.3s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(-19px);
+}
+
+.price-section{
+    /* border: 2px solid blue; */
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.price-card{
+    /* border: 2px solid purple; */
+    padding: 1.5em 0;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px hsl(234, 14%, 74%);
+}
+
+.card-one, .card-three{
+  background-color: white;
+  color: hsl(233, 13%, 49%);
+}
+
+.storage, .allowed-users, .upload-size{
+    font-size: 12px;
+}
+
+
+
+
+.card-two{
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color: white;
+}
+
+.scheme-section{
+    width: 85%;
+    margin: auto;
+}
+
+.scheme-price{
+    margin: .3em 0;
+    font-size: 3em;
+    color: hsl(232, 13%, 33%);
+}
+
+.p-white{
+    color: white;
+}
+
+hr{
+    margin: 10px;
+    opacity: .3;
+}
+
+.learn-more{
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    padding: 8px 0;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color:hsl(240, 78%, 98%);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.learn-more:hover{
+    box-shadow: 0px 0px 2px 1px inset hsl(233, 13%, 49%);
+    background: white;
+    color: hsl(237, 63%, 64%);
+}
+
+.btn-two{
+    background: white;
+    color: hsl(233, 13%, 49%);
+}
+
+.btn-two:hover{
+    box-shadow: 0px 0px 2px 1px inset white;
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color: white;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1em; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+
+
+/* ---- For desktop version ---- */
+
+@media(min-width:600px){
+
+    body{
+        background-image: url(images/bg-bottom.svg), url(images/bg-top.svg);
+        background-repeat: no-repeat;
+        background-position: 0% 110%, 100% 0%;
+        background-size: 300px, 250px;
+    }
+
+    .price-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+        width: 75%;
+    }
+
+    .card-two{
+        padding: 3em 0;
+    }
+
+   
+}
+
